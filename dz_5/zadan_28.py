@@ -3,8 +3,6 @@
 return sum(a, b) + 1 - такое использовать нельзя'''
 
 def sum_1(x, y):
-    if y == 0:
-        return x
-    return sum_1(x+1, y-1)
+    return x if y == 0 else sum_1(x+1, y-1)
 
 print(sum_1(int(input()), int(input())))
