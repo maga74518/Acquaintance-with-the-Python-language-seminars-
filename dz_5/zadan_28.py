@@ -2,7 +2,7 @@
 Из всех арифметических операций допускаются только +1 и -1. Также нельзя использовать циклы.
 return sum(a, b) + 1 - такое использовать нельзя'''
 
-def sum_1(x, y):
-    return x if y == 0 else sum_1(x+1, y-1)
+def sum(a, b):
+    return a if b == 0 else sum(a+1, b-1)
 
-print(sum_1(int(input()), int(input())))
+print(sum(int(input()), int(input())))
