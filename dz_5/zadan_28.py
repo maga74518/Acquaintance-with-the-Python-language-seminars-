@@ -7,4 +7,4 @@ def sum_1(x, y):
         return x
     return sum_1(x+1, y-1)
 
-print(sum_1(3, 6))
+print(sum_1(int(input()), int(input())))
