@@ -47,7 +47,7 @@ def del_data():
         line = f.read()
 
     str_for_del = search(line, input('\nВведите строку для удаления: '))
-    line = line.replace(*str_for_del, '').strip('\n')
+    line = line.replace(*str_for_del, '')
     line = '\n'.join([i for i in line.split('\n') if len(i) != 0])
 
     with open('book.txt', 'w', encoding='utf-8') as f:
